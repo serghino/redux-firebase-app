@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "income-expenses-app-57a0b": {
+      "hosting": {
+        "redux": [
+          "income-expenses-app-57a0b"
+        ]
+      }
+    }
+  }
+}
