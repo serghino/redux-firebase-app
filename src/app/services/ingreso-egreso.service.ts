@@ -19,10 +19,10 @@ export class IngresoEgresoService {
     const uid = this.authService.user.uid;
 
     delete ingresoEgreso.uid;
-
+    // how create a collection and document in Cloud Firestore.
     return this.firestore.doc(`${ uid }/ingresos-egresos`)
         .collection('items')
-        .add({ ...ingresoEgreso });
+        .add({ ...ingresoEgreso }); // new reference.
 
   }
 

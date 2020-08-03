@@ -8,7 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 
 
-
+// add only the components related at auth module.
 
 @NgModule({
   declarations: [

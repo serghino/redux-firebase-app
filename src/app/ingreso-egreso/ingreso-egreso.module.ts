@@ -23,7 +23,7 @@ import { ingresoEgresoReducer } from './ingreso-egreso.reducer';
     DashboardComponent,
     IngresoEgresoComponent,
     EstadisticaComponent,
-    DetalleComponent,  
+    DetalleComponent,
     OrdenIngresoPipe
   ],
   imports: [

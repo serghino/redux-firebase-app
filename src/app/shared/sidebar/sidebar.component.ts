@@ -7,6 +7,7 @@ import { AppState } from 'src/app/app.reducer';
 
 import { Subscription } from 'rxjs';
 import { filter } from 'rxjs/operators';
+import { Usuario } from 'src/app/models/usuario.model';
 
 @Component({
   selector: 'app-sidebar',
@@ -15,7 +16,7 @@ import { filter } from 'rxjs/operators';
 })
 export class SidebarComponent implements OnInit, OnDestroy {
 
-  nombre: string = '';
+  public usuario: Usuario;
   userSubs: Subscription;
 
   constructor( private authService: AuthService,
@@ -27,7 +28,7 @@ export class SidebarComponent implements OnInit, OnDestroy {
                       .pipe(
                         filter( ({user}) => user != null )
                       )
-                      .subscribe( ({ user }) => this.nombre = user.nombre );
+                      .subscribe( ({ user }) => this.usuario = user );
   }
 
   ngOnDestroy() {

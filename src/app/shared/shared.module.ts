@@ -18,6 +18,7 @@ import { RouterModule } from '@angular/router';
     CommonModule,
     RouterModule
   ],
+  // the export variable is used when other module use these components. e.g Dashboard Component.
   exports: [
     FooterComponent,
     NavbarComponent,
